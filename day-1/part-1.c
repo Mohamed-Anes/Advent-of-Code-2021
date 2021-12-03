@@ -9,10 +9,7 @@ int main()
     FILE *my_file = fopen("input.txt", "r");
 
     char *str_depth = malloc(sizeof(char) * 5);
-    int depth_1 = 1000000, depth_2, depth_3, depth_4, counter = 0;
-    char temp;
-
-
+    int depth_1 = 1000000, depth_2, counter = 0;
 
     while((getline(my_file, str_depth)) == 0){
         depth_2 = depth_1;
