@@ -10,7 +10,6 @@ int main()
 
     char *str_depth = malloc(sizeof(char) * 5);
     int depth[4], counter = 0, sum_1, sum_2;
-    int *ptr = depth;
 
     for(int i = 0; i < 4; ++i){
         getline(my_file, str_depth);
@@ -46,6 +45,7 @@ int main()
     printf("%d\n", counter);
 
     fclose(my_file);
+    free(str_depth);
     return 0;
     }
 
